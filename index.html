@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <script defer src="./code/index.js"></script>
+</head>
+<body class="font-sans w-screen h-screen p-0 m-0 flex justify-center items-center bg-slate-300">
+    <div id="box" class="flex h-[50vh] w-[25vw] flex-col rounded-md bg-white items-center p-5 shrink-0 grow-0">
+        <div id="qrbox" class="mt-1.5 shrink-0 grow-0 rounded-md bg-blue-600 flex justify-center items-center w-[80%] h-[60%]">
+            <img src="" alt="Qr Image" class="hidden" id="qrImage">
+        </div>
+        <input type="text" placeholder="Enter your link here" id="inputLink" class="mt-5 w-[80%] h-[10%] border-2 border-solid border-black rounded-xl p-5 outline-none">
+        <div id="result" class="h-auto w-[80%] flex flex-row justify-center items-center">
+            <button id="generateQR" class="h-auto w-auto flex p-3 m-3 justify-center items-center font-bold bg-green-500 rounded-md text-white hover:bg-green-700">Generate QR</button>
+            <button id="downloadBox" class="hidden h-auto w-auto flex p-3 m-3 justify-center items-center font-bold bg-blue-500 rounded-md text-white hover:bg-blue-700">
+                <a href="" target="_blank" download id="download">Download</a>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
