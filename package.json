@@ -1,0 +1,12 @@
+{
+  "name": "qrcode-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i input.css -o ./css/output.css",
+    "watch:css": "npx tailwindcss -i input.css -o ./css/output.css --watch" 
+  },
+  "author": "=",
+  "license": "MIT"
+}
